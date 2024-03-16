@@ -77,6 +77,10 @@
     #content-main{
         columns: 1;
     }
+    #content-how-to-work-it{
+        flex-flow: column wrap;
+        align-items: center;
+    }
 }
 
 @media (max-width:529px) {
