@@ -1,0 +1,546 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #ccc;
+}
+
+/* CABEÇALHO */
+header{
+    background-color: #FAC748;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header a{
+    text-decoration: none;
+    color: #001514;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+header input::placeholder{
+    padding-left: 1rem;
+}
+
+#logo{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#title-logo{
+    font-size: 3rem;
+    color: #001514;
+}
+
+#search{
+    margin-top: 1.5rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    gap: .3rem;
+}
+
+#isearch{
+    width: 50rem;
+    height: 5rem;
+    outline: none;
+    border: none;
+}
+
+#title-search{
+    height: 5rem;
+    border: none;
+}
+
+#title-search, .plus{
+    background-color: #A0BDFF;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #001514;
+    border-radius: .8rem;
+}
+
+.plus{
+    border: none;
+}
+
+#title-search:hover, .plus:hover{
+    background-color: #a0cfff;
+}
+
+#title-delivery{
+    font-size: 2rem;
+    color: #001514;
+}
+
+#account{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+#title-account, #welcome{
+    font-size: 1.5rem;
+    color: #001514;
+}
+
+.title-user{
+    font-size: 3rem;
+    color: #001514;
+}
+
+#welcome{
+    display: block;
+}
+
+#fav, #cart{
+    cursor: pointer;
+}
+
+/* MENU */
+nav{
+    background-color: #98B9F2;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav #home{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+nav #home a{
+    text-decoration: none;
+    color: #0C120C;
+}
+
+nav span{
+    padding: 2rem;
+}
+
+nav span a{
+    color: #0C120C;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+nav span a:hover{
+    text-decoration: underline;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+#title-main h1{
+    padding: 2rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#content-main{
+    columns: 3;
+}
+
+.img1, #img2, #img5, #img6{
+    background-color: #FAC748;
+}
+
+#img3, #img4{
+    background-color: #98B9F2;
+}
+
+.item{
+    background-color: #fff;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item a.title-link{
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #001514;
+}
+
+.subtitle-main{
+    font-size: 3rem;
+    color: #0C120C;
+    margin-bottom: 2rem;
+}
+
+#content-how-to-work-it{
+    width: 90%;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.content{
+    width: 33.3%;
+    margin-bottom: 2rem;
+}
+
+.content-sb{
+    padding: 2rem;
+    font-size: 2rem;
+    color: #0C120C;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .4rem;
+}
+
+.content-paragraph p{
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #0C120C;
+}
+
+/* RODAPÉ */
+footer{
+    background-color: #fff;
+    border-top: solid .1rem #0C120C;
+}
+
+#content-footer{
+    margin-bottom: 4rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.itens-footer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.itens-footer h2, #toolsshared h2{
+    padding-top: 2rem;
+    text-transform: uppercase;
+}
+
+.itens-footer span > a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #0C120C;
+}
+
+.itens-footer span > a:hover{
+    color: #a0cfff;
+}
+
+#toolsshared h2{
+    margin-bottom: 1rem;
+}
+
+#social-media{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#social-media i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#end{
+    width: 100%;
+    border-top: solid .1rem #0C120C;
+    text-align: center;
+}
+
+#end p{
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+/* TELA DE LOGIN */
+#infor{
+    background-color: #fff;
+    text-align: center;
+}
+
+#infor h1{
+    padding: 5rem;
+    font-size: 3rem;
+}
+
+#subtitles-login{
+    margin-left: 30%;
+    margin-bottom: 2rem;
+}
+
+#subtitles-login h2{
+    padding-top: .8rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#subtitles-login p, #inputs-login a, #inputs-login span{
+    font-size: 1.5rem;
+}
+
+#inputs-login{
+    width: 45%;
+    margin-left: 30%;
+    margin-bottom: 4rem;
+}
+
+#inputs-login a#forgot-pass, #content-singin-part2 a#forgot-pass{
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: #05668D;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#inputs-login span, #content-singin-part2 span{
+    color: red;
+    font-size: 1.5rem;
+}
+
+.campo{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+
+.campo label{
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.campo span{
+    color: red;
+}
+
+.campo input{
+    width: 100%;
+    height: 5rem;
+    outline: none;
+    border: none;   
+}
+
+.campo button{
+    background-color: #05668D;
+    width: 100%;
+    height: 5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.campo a{
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #0C120C;
+}
+
+.campo input, button{
+    margin-bottom: 2rem;
+}
+
+.campo #enter{
+    background-color: #FAC748;
+    color: #0C120C;
+    
+}
+
+.campo #enter:hover{
+    background-color: #fac748da;
+    opacity: .9;
+    height: 5.5rem;
+}
+
+.campo #new-account{
+    background-color: #98B9F2;
+}
+
+.campo #new-account:hover{
+    background-color: #98b9f2d0;
+    opacity: .9;
+    height: 5.5rem;
+}
+
+/* Criar conta */
+#register{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+#content-register-part1{
+    width: 45%;
+}
+
+#content-register-part2{
+    width: 45%;
+}
+
+.title-register{
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.campo-register{
+    display: flex;
+    flex-flow: column wrap;
+    gap: .5rem;
+}
+
+.title-register h2#infor-access{
+    margin-bottom: 2rem;
+}
+
+.campo-register label, #choise-person label{
+    font-size: 1.5rem;
+}
+
+.campo-register span{
+    color: red;
+}
+
+.campo-register input{
+    margin-bottom: 2rem;
+    border: none;
+    outline: none;
+    height: 5rem;
+}
+
+.campo-register input#iemail, .campo-register input#isenha{
+    margin-bottom: .4rem;
+}
+
+#campo-check, #campo-ver-senha{
+    margin-bottom: 2rem;
+}
+
+#choise-person{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#choise-person #ipj{
+    margin-left: 3rem;
+}
+
+#choise-person label{
+    margin-left: .5rem;
+}
+
+#btn-new-account{
+    width: 30%;
+    margin-left: 10%;
+
+}
+
+#btn-new-account button{
+    width: 100%;
+    background-color: #98B9F2;
+    width: 100%;
+    height: 5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #0C120C;
+    border: none;
+    cursor: pointer;
+}
+
+#btn-new-account button:hover{
+    background-color: #98b9f2d0;
+    opacity: .9;
+    height: 5.5rem;
+}
+
+/* SING IN */
+.content-singin{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#content-singin-part1, #content-singin-part2{
+    margin-top: 17rem;
+    width: 49%;
+    
+}
+
+#content-singin-part1{
+    border-right: .3rem #0C120C solid;
+}
+
+#singin-img{
+    text-align: center;
+}

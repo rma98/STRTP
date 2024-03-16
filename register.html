@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media-queries.css" screen="all">
+    <script src="https://kit.fontawesome.com/29dd473d90.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/logo.png" alt="Logo ToolsShared">
+            <span id="title-logo">Faz Favor</span>
+        </div>
+        <div id="search">
+            <input type="text" name="isearch" id="isearch" placeholder="O que você está procurando?">
+            <button id="title-search">Buscar</button>
+        </div>
+        <div id="deliveryman">
+            <span id="title-delivery"><a href="#">Entregador</a></span>
+        </div>
+        <div id="account">
+            <a href="login.html"><i class="fa-regular fa-circle-user title-user"></i></a>
+            <div id="my-account">
+                <span id="title-account"><a href="singin.html">Minha Conta</a></span>
+                <span id="welcome">Bem-vindo</span>
+            </div>
+        </div>
+        <div id="fav">
+            <span class="material-symbols-outlined">favorite</span>
+        </div>
+        <div id="cart">
+            <span class="material-symbols-outlined">shopping_cart</span>
+        </div>
+    </header>
+    <nav>
+        <div id="home">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="index.html">home</a>
+        </div>
+        <span><a href="">ferramentas elétricas</a></span>
+        <span><a href="">ferramentas manuais</a></span>
+        <span><a href="">epi</a></span>
+        <span><a href="">construção</a></span>
+        <span><a href="">automotivas</a></span>
+        <span><a href="">medição</a></span>
+        <span><a href="">jardim</a></span>
+        <span><a href="">máquinas</a></span>
+        <span><a href="">solda</a></span>
+        <span><a href="">acessórios</a></span>
+    </nav>
+    <div id="infor">
+        <h1>Criar conta</h1>
+    </div>
+    <div id="register">
+        <div id="content-register-part1">
+            <div class="title-register">
+                <h2>Informações Pessoais</h2>
+            </div>
+            <div id="infor-pessoais">
+                <div class="campo-register">
+                    <label for="inome">Nome
+                        <span>*</span>
+                    </label>
+                    <input type="text" name="inome" id="inome" placeholder="Digite seu nome">
+                </div>
+                <div class="campo-register">
+                    <label for="isobrenome">Sobrenome
+                        <span>*</span>
+                    </label>
+                    <input type="text" name="isobrenome" id="isobrenome" placeholder="Digite seu sobrenome">
+                </div>
+                <div id="choise-person">
+                    <input type="radio" name="person" id="ipf">
+                    <label for="ipf">Pessoa Física</label>
+                    <input type="radio" name="person" id="ipj">
+                    <label for="ipj">Pessoa Jurídica</label>
+                </div>
+                <div class="campo-register">
+                    <input type="text" name="myid" id="myid" placeholder="Se marcado PF, digite seu CPF. Se marcado PJ, digite seu CNPJ">
+                </div>
+            </div>
+        </div>
+        <div id="content-register-part2">
+            <div class="title-register">
+                <h2 id="infor-access">Informações de acesso</h2>
+                <div class="campo-register">
+                    <label for="iemail">E-mail
+                        <span>*</span>
+                    </label>
+                    <input type="email" name="iemail" id="iemail" placeholder="Digite seu e-mail">
+                </div>
+                <div id="campo-check">
+                    <input type="checkbox" name="icheck" id="icheck">
+                    <label for="icheck">Assinar Newsletter</label>
+                </div>
+                <div class="campo-register">
+                    <label for="isenha">Senha
+                        <span>*</span>
+                    </label>
+                    <input type="password" name="isenha" id="isenha" placeholder="Digite sua senha">
+                </div>
+                <div id="campo-ver-senha">
+                    <input type="checkbox" name="ver-senha" id="ver-senha">
+                    <label for="ver-senha">Mostrar senha</label>
+                </div>
+                <div class="campo-register">
+                    <label for="repeat-pass">Confirmar Senha
+                        <span>*</span>
+                    </label>
+                    <input type="password" name="repeat-pass" id="repeat-pass" placeholder="Digite sua senha novamente">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="btn-new-account">
+        <button>criar conta</button>
+    </div>
+    <footer>
+        <div id="content-footer">
+            <div class="itens-footer">
+                <h2>mais acessados</h2>
+                <span><a href="#">Ferramentas</a></span>
+                <span><a href="#">Escadas de Alumínio</a></span>
+                <span><a href="#">Esmerilhadeiras</a></span>
+                <span><a href="#">Serras Circulares</a></span>
+                <span><a href="#">Ferramentas Elétricas</a></span>
+                <span><a href="#">Parafusadeiras</a></span>
+                <span><a href="#">Bomba D'Agua</a></span>
+            </div>
+            <div class="itens-footer">
+                <h2>atendimento ao cliente</h2>
+                <span><a href="#">Como Alugar</a></span>
+                <span><a href="#">Formas de Entrega</a></span>
+                <span><a href="#">Formas de Pagamento</a></span>
+                <span><a href="#">Política de Segurança</a></span>
+                <span><a href="#">Política de Troca</a></span>
+                <span><a href="#">Política de Privacidade</a></span>
+                <span><a href="#">SAC</a></span>
+            </div>
+            <div class="itens-footer">
+                <h2>sobre nós</h2>
+                <span><a href="#">Quem Somos</a></span>
+                <span><a href="#">Trabalhe Conosco</a></span>
+            </div>
+            <div id="toolsshared">
+                <h2>toolsshared nas redes sociais</h2>
+                <div id="social-media">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+        </div>
+        <div id="end">
+            <p>&copy; ToolsShared 2023-2024. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
